@@ -1,0 +1,33 @@
+<ion-header >
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div >
+        <div class="text-center ">
+            <h1 style="text-align: center;">Bienvenido a tu Super online.</h1>
+            <p text-justify   padding>En superApp nos preocupamos por ofrecerte nuestros productos 
+                de mejor calidad al mejor precio, sobre todo puedes ordenar desde la comodidad de tu hogar
+                haciendo entregas en tiempo record e integridad en nuestros productos.
+              </p>
+          </div>
+        </div>
+
+</ion-content>
+
+<ion-item>
+    Item
+  </ion-item>
+
+<ion-content>
+<ion-slides class="image-slider" loop="true" slidesPerView="2">
+    <ion-slide *ngFor="let img of images">
+      <img src="assets/img/{{img}}" class="thumb-img" imageViewer/>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
